@@ -35,8 +35,8 @@ resource "aws_iam_user" "user" {
 # S3 - File Tags
 ##############################################################
 module "s3-documents" {
-  source  = "astechmind/s3/aws"
-  version = "1.0.0"
+  source  = "clouddrove/s3/aws"
+  version = "0.15.0"
 
   name = "${var.file_tag_bucket_name}-${var.environment}"
   acl  = "private"
