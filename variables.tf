@@ -32,8 +32,8 @@ variable "application" {
 # Bucket S3
 variable "file_tag_bucket_name" {
   type = string
+  sensitive = true
   default = "brk-geocoding-file-tag"
+
 }
-
-
 
