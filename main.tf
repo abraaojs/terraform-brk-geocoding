@@ -37,10 +37,9 @@ resource "aws_iam_user" "user" {
 module "s3-documents" {
   source  = "terraform-aws-modules/s3-bucket/aws"
   version = "2.4.0"
-
-  name = "${var.file_tag_bucket_name}-${var.environment}"
-  acl  = "private"
-  tags = local.tags
+  name        = "${var.file_tag_bucket_name}-${var.environment}"
+  acl         = "private"
+  tags        = local.tags
 }
 
 #############################################################
