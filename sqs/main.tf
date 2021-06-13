@@ -1,6 +1,6 @@
 module "sqs" {
-  source  = "astechmind/sqs/aws"
-  version = "1.0.0"
+  source  = "clouddrove/sqs/aws"
+  version = "0.14.0"
 
   name_sqs                    = "brk-geocoding"
   visibility_timeout_seconds  = 30
