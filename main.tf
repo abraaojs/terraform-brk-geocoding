@@ -35,14 +35,13 @@ resource "aws_iam_user" "user" {
 # S3 - File Tags
 ##############################################################
 module "s3-documents" {
-  source  = "clouddrove/s3/aws"
-  version = "0.15.0"
+  source  = "terraform-aws-modules/s3-bucket/aws"
+  version = "2.4.0"
 
   name = "${var.file_tag_bucket_name}-${var.environment}"
   acl  = "private"
   tags = local.tags
 }
-
 
 #############################################################
 # SQS                                                       #

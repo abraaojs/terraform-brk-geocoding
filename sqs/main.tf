@@ -1,6 +1,6 @@
 module "sqs" {
-  source  = "clouddrove/sqs/aws"
-  version = "0.14.0"
+  source  = "terraform-aws-modules/sqs/aws"
+  version = "3.1.0"
 
   name_sqs                    = "brk-geocoding"
   visibility_timeout_seconds  = 30
